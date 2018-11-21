@@ -1,0 +1,133 @@
+<html>
+
+<head>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="dist/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="dist/assets/owl.carousel.min.css">
+
+    <title>slideshow</title>
+    <style>
+        body{
+            background-color: black;
+
+        }
+        /* -------------------------------------------------------------------------------------------- */
+        .hover_container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    margin: 20 auto;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hover_container:hover .image {
+  opacity: 0.3;
+}
+
+.hover_container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: rgb(209, 221, 209);
+  color: rgb(22, 8, 150);
+  font-size: 16px;
+  padding: 16px 32px;
+}
+/* ------------------------------------------------------------------ */
+
+  div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    margin: 50px auto;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}      
+
+
+
+    </style>
+	</head>
+	<body>
+        <div class="container">
+            <div class="slideshow">
+                <div class="slider_reel owl-carousel">
+                        <img src="images/1.jpg" alt="">
+                        <img src="images/2.jpg" alt="">
+                        <img src="images/3.jpg" alt="">
+                        <img src="images/4.jpg" alt="">
+                        <img src="images/5.jpg" alt="">
+                        <img src="images/6.jpg" alt="">
+                        <img src="images/7.jpg" alt="">
+                        <img src="images/8.jpg" alt="">
+                </div>
+               
+            </div>
+
+        </div>
+<!-- ============================================================================================ -->
+        <div class="scrollmenu">
+                <img src="images/1.jpg" alt="">
+                <img src="images/2.jpg" alt="">
+                <img src="images/3.jpg" alt="">
+                <img src="images/4.jpg" alt="">
+                <img src="images/5.jpg" alt="">
+                <img src="images/6.jpg" alt="">
+                <img src="images/7.jpg" alt="">
+                <img src="images/8.jpg" alt="">
+        </div>
+<!-- ================================================================================================== -->
+        <div class="hover_container">
+                <img src="images/10.jpg" alt="Avatar" class="image" >
+                <div class="middle">
+                  <div class="text"> shooting stars are cute,, mother nature</div>
+                </div>
+              </div>
+
+        <!-- ====================================================================== -->
+        <script>
+            $('.owl-carousel').owlCarousel({
+    margin:10,
+    loop:true,
+    autoWidth:true,
+    items:4
+})
+           
+        </script>
+    </body>
+
+
+			
+				
+
